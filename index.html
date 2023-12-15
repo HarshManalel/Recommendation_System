@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supermarket Recommendation System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Supermarket Recommendation System</h1>
+    </header>
+    <section id="email-section">
+        <h2>Email Drafts for Top 5 Customers</h2>
+        <div id="email-drafts">
+            {{ email_drafts | safe }}
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2023 Supermarket Recommendation System. All rights reserved.</p>
+    </footer>
+</body>
+</html>
